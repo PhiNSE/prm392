@@ -3,19 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:background="@color/blue"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/blue"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView4"
+        style="@style/TextViewRegular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:text="Login"
-        android:textColor="@color/white"
-        android:textSize="30sp"
+        android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -31,34 +31,52 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <TextView
+        style="@style/TextViewRegular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="English . Change"
-        android:textColor="@color/white"
+        android:text="English"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/TextViewHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:text="."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
+    <TextView
+        style="@style/TextViewBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Change"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
     <EditText
         android:id="@+id/etPhoneOrEmail"
+        style="@style/EditTextStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="120dp"
         android:hint="Email or Phone"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <EditText
         android:id="@+id/etPass"
+        style="@style/EditTextStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:hint="password"
-        android:textColor="@color/white"
         android:textColorHint="@color/white"
         app:layout_constraintTop_toBottomOf="@+id/etPhoneOrEmail"
         tools:layout_editor_absoluteX="20dp" />
@@ -70,33 +88,35 @@
         android:layout_marginHorizontal="50dp"
         android:layout_marginTop="20dp"
         android:background="@color/blue2"
-        android:text="Login"
+        style="@style/TextViewRegular"
+        android:alpha="0.5"
+        android:text="Log in"
         app:layout_constraintTop_toBottomOf="@+id/etPass" />
 
     <TextView
         android:id="@+id/btnSignUpFb"
+        style="@style/TextViewRegular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:text="Sign up for facebook"
-        android:textColor="@color/white"
-        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/textView7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView7"
+        style="@style/TextViewRegular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:text="Forgot Password?"
-        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cvHelp"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginRight="20dp"
@@ -110,5 +130,37 @@
             android:layout_gravity="center"
             android:src="@drawable/question_sign" />
     </androidx.cardview.widget.CardView>
+
+    <TextView
+        style="@style/TextViewRegular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Or login with"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin2" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:cardCornerRadius="250dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSignUpFb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin2">
+
+        <ImageView
+            android:id="@+id/ivInsta"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:elevation="1dp"
+            android:src="@drawable/instagram"
+            tools:layout_editor_absoluteX="349dp"
+            tools:layout_editor_absoluteY="597dp" />
+    </androidx.cardview.widget.CardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
