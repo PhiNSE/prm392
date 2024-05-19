@@ -67,6 +67,7 @@
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="120dp"
         android:hint="Email or Phone"
+        android:padding="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
@@ -77,19 +78,20 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:hint="password"
+        android:padding="24dp"
         android:textColorHint="@color/white"
         app:layout_constraintTop_toBottomOf="@+id/etPhoneOrEmail"
         tools:layout_editor_absoluteX="20dp" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnLogin2"
+        style="@style/TextViewRegular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="50dp"
         android:layout_marginTop="20dp"
-        android:background="@color/blue2"
-        style="@style/TextViewRegular"
         android:alpha="0.5"
+        android:background="@color/blue2"
         android:text="Log in"
         app:layout_constraintTop_toBottomOf="@+id/etPass" />
 
