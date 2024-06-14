@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/blue"
-    tools:context=".MainActivity">
+    tools:context=".ui.auth.FacebookSignInActivity">
 
     <TextView
         android:id="@+id/textView4"
@@ -74,6 +74,7 @@
     <EditText
         android:id="@+id/etPass"
         style="@style/EditTextStyle"
+        android:inputType="textPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
@@ -147,6 +148,8 @@
         android:id="@+id/cardView"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
         app:cardCornerRadius="250dp"
         app:layout_constraintBottom_toTopOf="@+id/btnSignUpFb"
         app:layout_constraintEnd_toEndOf="parent"
@@ -160,6 +163,29 @@
             android:layout_gravity="center"
             android:elevation="1dp"
             android:src="@drawable/instagram"
+            tools:layout_editor_absoluteX="349dp"
+            tools:layout_editor_absoluteY="597dp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="250dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSignUpFb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin2">
+
+        <ImageView
+            android:id="@+id/ivGoogle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:elevation="1dp"
+            android:src="@drawable/ic_google_login"
             tools:layout_editor_absoluteX="349dp"
             tools:layout_editor_absoluteY="597dp" />
     </androidx.cardview.widget.CardView>

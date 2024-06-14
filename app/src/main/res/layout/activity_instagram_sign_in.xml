@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg_color_ig"
     android:paddingHorizontal="16dp"
-    tools:context=".IstagramSignIn">
+    tools:context=".ui.auth.InstagramSignIn">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
