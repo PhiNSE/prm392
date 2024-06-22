@@ -19,4 +19,12 @@
     <item
         android:id="@+id/action_logout"
         android:title="Logout" />
+
+    <item
+        android:id="@+id/action_upload"
+        android:title="Upload" />
+
+    <item
+        android:id="@+id/action_notification"
+        android:title="Notification" />
 </menu>

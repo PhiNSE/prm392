@@ -173,7 +173,7 @@ public class FacebookSignInActivity extends AppCompatActivity {
     private void setUpLoginWithGoogle() {
         // Configure Google Sign In
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken("147293638174-rdkj6q578s9invupm80hb1hfq8u8c7sm.apps.googleusercontent.com")
+                .requestIdToken("147293638174-4mvl60ms4arj7k4mbsbruncds82ip80f.apps.googleusercontent.com")
                 .requestEmail()
                 .build();
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);

@@ -24,6 +24,8 @@ import com.phinse.prm392.service.model.Product;
 import com.phinse.prm392.ui.auth.FacebookSignInActivity;
 import com.phinse.prm392.ui.chatbox.ChatBoxActivity;
 import com.phinse.prm392.ui.home.adapter.ProductRecyclerViewAdapter;
+import com.phinse.prm392.ui.notification.NotificationActivity;
+import com.phinse.prm392.ui.upload.UploadActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -94,6 +96,12 @@ public class HomeActivity extends AppCompatActivity {
                 finish();
             } else if (item.getItemId() == R.id.action_chatbox) {
                 Intent intent = new Intent(HomeActivity.this, ChatBoxActivity.class);
+                startActivity(intent);
+            } else if (item.getItemId() == R.id.action_upload) {
+                Intent intent = new Intent(HomeActivity.this, UploadActivity.class);
+                startActivity(intent);
+            } else if (item.getItemId() == R.id.action_notification) {
+                Intent intent = new Intent(HomeActivity.this, NotificationActivity.class);
                 startActivity(intent);
             }
             return true;

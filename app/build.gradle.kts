@@ -46,6 +46,8 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.swiperefreshlayout)
+    implementation(libs.firebase.inappmessaging.display)
+    implementation(libs.androidx.work.runtime)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -74,9 +76,16 @@ dependencies {
 
     //firebase
     implementation(platform("com.google.firebase:firebase-bom:33.1.0"))
+    //auth
     implementation("com.google.firebase:firebase-auth")
+    //firestore db
     implementation("com.google.firebase:firebase-firestore")
-    //gms
+    //gms google oauth
     implementation("com.google.android.gms:play-services-auth:19.2.0")
+    //storage
+    implementation("com.google.firebase:firebase-storage")
+    //firebase cloud messaging
+    implementation("com.google.firebase:firebase-messaging")
+    implementation("com.google.firebase:firebase-analytics")
 
 }
